@@ -1,0 +1,80 @@
+h1{
+    text-align: left;
+    color: white !important;
+    size: 28px;
+}
+
+#RegistrationBody{
+    background-color: #636060;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e53ac;
+
+}
+
+#navigation{
+
+    text-align: right;
+    display: flex;
+    padding-right: 40px;
+    margin: right 100px;
+    justify-content: space-evenly;
+    color: white;
+    gap: 20px;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+a {
+    color: white !important; 
+    text-decoration: underline; 
+    size: 30px;
+}
+
+#image-container{
+    position: relative;
+    width: 100%;
+}
+
+#img1{
+    box-sizing: border-box;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+#TextBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 20px 20px 4px #007bff;
+}
+
+#title1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #636060;
+}
+
+#SearchBox {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 18px;
+    width: 800px;
+    height: 30px;
+    box-shadow: 4px 4px 2px #007bff;
+    color: #939191;
+}
+

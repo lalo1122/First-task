@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="PD.css">
+        <meta charset="UTF-8">
+        <title>Library</title>
+    </head>
+    
+    <body id="RegistrationBody">
+        <header> 
+            
+            <h1>Library Management System</h1>
+            <section id="navigation">
+                <a href="https://www.utas.edu.au/courses/cse/courses/k7i-master-of-information-technology-and-systems" target="_blank" >Home</a>
+                <a href="Catalogue.html">Catalogue</a>
+                <a href="Registratiton1.html">Registration</a>
+                <a href="https://www.utas.edu.au/about/contact" target="_blank">Contact</a>
+            </section>
+                    
+
+        </header>
+    
+        <section id="register1">
+            <form action="/submit_form" method="post">
+                
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required
+                    pattern="?=.*@"><br><br>
+
+                <label for="email">Password:</label><br>
+                <input type="password" id="password" name="password" required
+                    minlength="8"
+                    pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+                    title="The password should containt at least one number"><br><br>
+
+                <label for="confirmPassword">Repit Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" required
+                    minlength="8"
+                    pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+                    title="The password should containt at least one number"><br><br>
+                
+                <button type="Submit" value="Submit">Submit</button>  
+                <button type="Cancel" value="Cancel">Cancel</button>
+            </form>
+            <script> 
+                function validatePassword() {
+                var password = document.getElementById("password").value;
+                var confirmPassword = document.getElementById("confirmPassword").value;
+                
+                if (password !== confirmPassword) {
+                    alert("Las contraseñas no coinciden.");
+                    return false; 
+                }
+                return true;
+                }
+            </script>
+        </section>
+
+    </body>
+</html>
